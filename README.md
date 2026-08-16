@@ -1,5 +1,7 @@
 # MoodLens 🔍: Emotion Detection from Text
 
+[![tests](https://github.com/JAYANSHUBADLANI/moodlens/actions/workflows/tests.yml/badge.svg)](https://github.com/JAYANSHUBADLANI/moodlens/actions/workflows/tests.yml)
+
 Classify short text into **6 emotions** (sadness, joy, love, anger, fear, surprise), served through a production-style REST API.
 
 Built end-to-end: data pipeline → training → evaluation → serving → tests → Docker.
