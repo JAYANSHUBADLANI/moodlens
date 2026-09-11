@@ -13,7 +13,7 @@ Built end-to-end: data pipeline → training → evaluation → serving → test
 | Validation | 0.900 | 0.873 | 0.899 |
 | **Test** | **0.894** | **0.844** | **0.893** |
 
-Model: TF-IDF (word 1-2 grams + char 3-5 grams) → calibrated Linear SVM. Trains in ~30s on CPU, 8.4 MB artifact, millisecond inference, a deliberately strong classical baseline before reaching for transformers. Per-class breakdown and a normalized confusion matrix are generated in `reports/` on every training run.
+Model: TF-IDF (word 1-2 grams + char 3-5 grams) → calibrated Linear SVM. Trains in 4.2s on CPU, the figure recorded in `reports/metrics.json`, 8.4 MB artifact, millisecond inference, a deliberately strong classical baseline before reaching for transformers. Per-class breakdown and a normalized confusion matrix are generated in `reports/` on every training run.
 
 Dataset: [dair-ai/emotion](https://huggingface.co/datasets/dair-ai/emotion), 20k English tweets (16k train / 2k val / 2k test), auto-downloaded and cached on first run.
 
